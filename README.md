@@ -19,17 +19,17 @@ Recommended:
 
 1. Set up a virtual environment (optional):  
 
-    pip install virtualenv  
-    python -m venv myenv  
-    source myenv/bin/activate  
+    pip install virtualenv
+    python -m venv myenv
+    source myenv/bin/activate
 
-2. Install dependencies:  
+2. Install dependencies:
 
-    pip install -r requirements.txt  
+    pip install -r requirements.txt
 
-3. Example warmstart file  
+3. Example warmstart file:
 
-    run_clustering.py  
+    run_clustering.py
 
 ## Methods
 1. **clustering(x, k, random_state)**  
