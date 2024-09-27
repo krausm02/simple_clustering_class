@@ -33,15 +33,15 @@ Example warmstart file:
 
 ## Methods
 1. **clusters(x, k, random_state)**  
-    >Creates the class instance  
+    Creates the class instance  
 
     **Parameters**  
-        **x** : ndarray of shape (n_samples, n_features)  
-                The generated samples  
-        **k** : int  
-                The number of clusters in range [1, n_samples]
-        **random_state** : int (optional)  
-                Random integer for initializing centers (>1)
+        -**x** : ndarray of shape (n_samples, n_features)  
+            The generated samples  
+        -**k** : int  
+            The number of clusters in range [1, n_samples]
+        -**random_state** : int (optional)  
+            Random integer for initializing centers (>1)
 
 2. **run_clustering()**  
         Performs the clustering operation, matches points to centers  
