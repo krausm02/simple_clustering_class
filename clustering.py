@@ -2,11 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-class clustering:
+class clusters:
     """
-    Create a clustering class for random data
+    Create a clusters class for random data
     """
-    def __init__(self, x, k, random_state=23):
+    def __init__(self, x, k: int, random_state: int=23):
         # If the user sent data
         if x.shape[0] > 0:
             self.x = x
@@ -16,8 +16,12 @@ class clustering:
         if (k > 0) and (k <= x.shape[0]):
             self.k = k
         else:
-            raise Exception("The number of clusters must be in the range (0, # points]")
-        self.random_state = random_state
+            raise Exception("The number of clusters must be in the range [1, n_points]")
+        # Must be a postive integer
+        if random_state >= 0:
+            self.random_state = random_state
+        else:
+            raise Exception("The random_state parameter must be >= 0")
 
 
     def plot_clusters(self):
