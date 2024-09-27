@@ -41,9 +41,9 @@ Example warmstart file:
         - **k** : int  
             The number of clusters in range [1, n_samples]
         - **random_state** : int (optional)  
-            Random integer for initializing centers (>1)
+            Random integer for initializing centers (>=0)
 
 - **run_clustering()**  
-        Performs the clustering operation, matches points to centers  
+    Performs the clustering operation, matches points to centers  
 - **plot_clusters()**  
-        Creates a color-coded plot showing the point clusters and centers
+    Creates a color-coded plot showing the point clusters and centers
