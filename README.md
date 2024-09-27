@@ -34,15 +34,16 @@ Example warmstart file:
 ## Methods
 1. **clustering(x, k, random_state)**  
         Creates the class instance  
+
     **Parameters**  
         **x** : ndarray of shape (n_samples, n_features)  
-            The generated samples  
+                The generated samples  
         **k** : int  
-            The number of clusters  
+                The number of clusters  
         **random_state** : int (optional)  
-            Random integer for initializing centers  
+                Random integer for initializing centers  
 
 2. **run_clustering()**  
         Performs the clustering operation, matches points to centers  
 3. **plot_clusters()**  
-        Creates a colocoded plot showing the point clusters and centers
+        Creates a color-coded plot showing the point clusters and centers
