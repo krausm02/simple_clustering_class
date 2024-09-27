@@ -17,32 +17,32 @@ Recommended:
 
 ## Running Locally:
 
-1. Set up a virtual environment (optional):
+1. Set up a virtual environment (optional):  
 
-    pip install virtualenv
-    python -m venv myenv
-    source myenv/bin/activate
+    pip install virtualenv  
+    python -m venv myenv  
+    source myenv/bin/activate  
 
-2. Install dependencies:
+2. Install dependencies:  
 
-    pip install -r requirements.txt
+    pip install -r requirements.txt  
 
-3. Example warmstart file
+3. Example warmstart file  
 
-    run_clustering.py
+    run_clustering.py  
 
 ## Methods
-1. **clustering(x, k, random_state)**
-        Creates the class instance
-    **Parameters**
-        **x** : ndarray of shape (n_samples, n_features)
-            The generated samples
-        **k** : int
-            The number of clusters
-        **random_state** : int (optional)
-            Random integer for initializing centers
+1. **clustering(x, k, random_state)**  
+        Creates the class instance  
+    **Parameters**  
+        **x** : ndarray of shape (n_samples, n_features)  
+            The generated samples  
+        **k** : int  
+            The number of clusters  
+        **random_state** : int (optional)  
+            Random integer for initializing centers  
 
-2. **run_clustering()**
-        Performs the clustering operation, matches points to centers
-3. **plot_clusters()**
+2. **run_clustering()**  
+        Performs the clustering operation, matches points to centers  
+3. **plot_clusters()**  
         Creates a colocoded plot showing the point clusters and centers
