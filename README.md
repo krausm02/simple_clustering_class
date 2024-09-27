@@ -17,17 +17,17 @@ Recommended:
 
 ## Running Locally:
 
-1. Set up a virtual environment (optional):  
+Set up a virtual environment (optional):  
 
     pip install virtualenv
     python -m venv myenv
     source myenv/bin/activate
 
-2. Install dependencies:
+Install dependencies:
 
     pip install -r requirements.txt
 
-3. Example warmstart file:
+Example warmstart file:
 
     run_clustering.py
 
