@@ -27,9 +27,22 @@ Recommended:
 
     pip install -r requirements.txt
 
-3. Enter parameters in run_clustering
-   - k = 6               # Number of clusters
-   - random_state = 23   # Random state for initialization
-   - n_samples = 1000    # Number of samples in all groups
-   - n_features = 2      # Number of features in vector for each sample
-   - centers = 6         # Number of groups of initial samples
+3. Example warmstart file
+
+    run_clustering.py
+
+## Methods
+1. **clustering(x, k, random_state)**
+        Creates the class instance
+    **Parameters**
+        **x** : ndarray of shape (n_samples, n_features)
+            The generated samples
+        **k** : int
+            The number of clusters
+        **random_state** : int (optional)
+            Random integer for initializing centers
+
+2. **run_clustering()**
+        Performs the clustering operation, matches points to centers
+3. **plot_clusters()**
+        Creates a colocoded plot showing the point clusters and centers

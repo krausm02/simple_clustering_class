@@ -6,11 +6,10 @@ class clustering:
     """
     Create a clustering class for random data
     """
-    def __init__(self, x, y, k, random_state=23):
+    def __init__(self, x, k, random_state=23):
         # If the user sent data
         if x.shape[0] > 0:
             self.x = x
-            self.y = y
         else:
             raise Exception("x cannot be empty")
         # If the user sent a reasonable number of clusters
@@ -21,7 +20,7 @@ class clustering:
         self.random_state = random_state
 
 
-    def plot_blobs(self):
+    def plot_clusters(self):
         """
         Plot the clusters and centers
         """
